@@ -20,7 +20,7 @@ Here are some sensible default polices
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
-There are some ports you will want to allow before enabling ufw
+There are some ports you will want to allow before enabling `ufw`
 ```bash
 # for ssh(if you use a different port enable it)
 sudo ufw allow 22/tcp
