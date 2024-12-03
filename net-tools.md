@@ -15,9 +15,39 @@ sudo dnf install net-tools -y
 sudo pacman -Syu net-tools
 ```
 
+## Note
+For these commands I have to use sudo because I use the fish shell. But if you use another shell you can ignore the sudo command.
 ## Get Addresses
 Net-tools has a cli app called `ip`. With it you can get addresses such as ip, mac addresses, ipv6 addresses. To get these type.
 ```bash
 sudo ip a
 ```
-Here a is short for address.`
+Here `a` is short for `address`.
+
+## Get Routes 
+To see all of your routes type.
+```bash
+sudo ip r
+```
+
+## Get Neighbours
+To get your arp(Address solution Protocol) type.
+```
+sudo ip n
+```
+
+## Using NMCLI
+`nmcli` is another net-tools cli program.
+
+## General
+to get a general connectivity and status of your network interface type.
+```bash
+nmcli g
+```
+`g` is short for `general`.
+
+## Connection
+To see all of your connections type.
+```bash
+nmcli c
+```
