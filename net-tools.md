@@ -51,3 +51,13 @@ To see all of your connections type.
 ```bash
 nmcli c
 ```
+
+## Other commands
+There are lots of other options. You can check these out with the command.
+```bash
+nmcli --help
+```
+
+## Network Manager config file
+`nmcli` stands for `Network Manager Command Line Interface`
+you can also make some configurations through the config file which is located at `/etc/NetworkManager/NetworkManager.conf`. There also other config files at `/etc/NetworkManager/`.
