@@ -19,3 +19,32 @@ You also might to resize physical volume after resizing a partition, this can be
 ```bash
 sudo pvresize /dev/sdX
 ```
+
+## Volume Groups
+To create a volume group use the command
+```bash
+sudo vgcreate bucket /dev/sdX /dev/example
+```
+Here I am calling the volume group `bucket`. And I am using some physical volumes to create it.
+
+You can view and see info about you `Volume Groups` with the command
+```bash
+sudo vgdisplay
+```
+
+You can also view them with
+```bash
+sudo vgs
+```
+
+To remove a volume group, you can use the command
+```bash
+sudo vgremove bucket
+```
+
+## Logical Volumes
+
+To create a `Logical Volume` use the command.
+```bash
+sudo lvcreate -L 15G -n bit bucket
+```
